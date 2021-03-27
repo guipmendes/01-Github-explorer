@@ -28,6 +28,11 @@ module.exports = {
                 test: /\.jsx$/,
                 exclude: /node_mudules/,
                 use: 'babel-loader'
+            },
+            {
+                test: /\.scss$/,
+                exclude: /node_mudules/,
+                use: ['style-loader', 'css-loader', 'sass-loader']
             }
         ],  
     }
